@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
@@ -10,32 +9,30 @@
   <meta name="description" content="Moti Granovsky - Personal website and CV" />
   <meta name="author" content="Moti Granovsky" />
   <meta name="keywords" content="moti, granovsky, moti.granovsky, motig, motigra, cv, resume, devrel, developer, devx, sisense" />
-  <meta name="google-site-verification" content="D3WjgXBUGNZyyqDcLOS-gP4tXAqkVP5xz-Dnp0orEDs" />
-        
+  <meta name="google-site-verification" content="D3WjgXBUGNZyyqDcLOS-gP4tXAqkVP5xz-Dnp0orEDs" />  
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/index.css">
-
+  <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
-
 </head>
 <body>
-
   <div class="container">
     <div class="row">
-      <div class="column" style="margin-top: 25%">
+      <div class="column" style="margin-top: 25px">
         <div class="row">
           <div class="u-pull-left">
             <img src="./images/pic.png" />
@@ -45,13 +42,39 @@
             <p>Born 1988. Lives in Israel.</p>
           </div>
         </div>
-        <p style="margin-top:10px">
-          <a class="button" href="https://www.instagram.com/motig88/" target="_blank">Instagram</a>
-          <a class="button" href="https://www.facebook.com/motig" target="_blank">Facebook</a>
-          <a class="button" href="https://www.youtube.com/channel/UCVVYJfuek1gG_tLxIZ-NZ2w" target="_blank">YouTube</a>
-          <a class="button" href="https://www.linkedin.com/in/motig/" target="_blank">Linkedin</a>
-          <a class="button" href="https://github.com/motigra" target="_blank">Github</a>
-          <a class="button" href="https://stackexchange.com/users/2731389/motig88" target="_blank">StackExchange</a>
+        <p class="btn-flex" style="margin-top:10px">
+          <a class="button" href="https://www.instagram.com/motig88/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a class="button" href="https://www.facebook.com/motig" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+          <a class="button" href="https://www.youtube.com/channel/UCVVYJfuek1gG_tLxIZ-NZ2w" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+            <span>YouTube</span>
+          </a>
+          <a class="button" href="https://www.linkedin.com/in/motig/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>Linkedin</span>
+          </a>
+          <a class="button" href="https://github.com/motigra" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <span>Github</span>
+          </a>
+          <a class="button" href="https://stackexchange.com/users/2731389/motig88" target="_blank">
+            <i class="fa-brands fa-stack-exchange"></i>
+            <span>StackExchange</span>
+          </a>
+          <a class="button" href="https://www.printables.com/social/541615-motig" target="_blank">
+            <i class="icon-printables"></i>
+            <span>Printables</span>
+          </a>
+          <a class="button" href="https://www.google.com/maps/contrib/117334534460376341294" target="_blank">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Google Maps</span>
+          </a>
         </p>
       </div>
     </div>
@@ -78,40 +101,96 @@
     <div class="row">
       <div class="column">
         <h5>Resume</h5>
-        <pre><code>
-  {
-    "experience": [
-      {
-        "title": "IDF",
-        "description": "Israeli Defense Forces - Army HQ, C4I branch"
-        "from": "2007",
-        "to": "2013",
-        "roles": [
-          ".NET + Web Developer",
-          ".NET + Web Team Lead",
-          "Project Manager"
-        ]
-      },
-      {
-        "title": "Sisense",
-        "description": "Sisense BI - Tel Aviv",
-        "from": 2013,
-        "to": null,
-        "roles": [
-          "Full-stack Team Lead",
-          "Offshore Site Manager",
-          "Professional Services Group Lead",
-          "Head of Developer Relations, Chief API Architect",
-          "Sr. Product Manager",
-          "Product Director"
-        ]
-      }
-    ]
-  }
-        </code></pre>
+        <div class="tl-container">
+          <div class="tl-item">
+            <div class="tl-header">
+              2022
+            </div>
+            <div class="tl-text">
+              Product Director<br/>
+              @ Sisense
+            </div>
+            <b>&nbsp;</b>
+          </div>
+          <div class="tl-item">
+            <div class="tl-header">
+              2021
+            </div>
+            <div class="tl-text">
+              Sr. Product Manager, Developer Platform<br/>
+              @ Sisense
+            </div>
+            <b>&nbsp;</b>
+          </div>
+          <div class="tl-item">
+            <div class="tl-header">
+              2017
+            </div>
+            <div class="tl-text">
+              Head of Developer Relations<br/>
+              Chief API Architect<br/>
+              @ Sisense
+            </div>
+            <b>&nbsp;</b>
+          </div>
+          <div class="tl-item">
+            <div class="tl-header">
+              2015
+            </div>
+            <div class="tl-text">
+              Professional Services Group Lead<br/>
+              @ Sisense
+            </div>
+            <b>&nbsp;</b>
+          </div>
+          <div class="tl-item">
+            <div class="tl-header">
+              2013
+            </div>
+            <div class="tl-text">
+              Full-stack Team Lead<br/>
+              Offshore Site Lead<br/>
+              @ Sisense
+            </div>
+            <b>&nbsp;</b>
+          </div>
+          <div class="tl-item">
+            <div class="tl-header">
+              2010
+            </div>
+            <div class="tl-text">
+              Project Lead<br/>
+              Software Team Lead<br/>
+              @ IDF 
+            </div>
+            <b>&nbsp;</b>
+          </div>
+          <div class="tl-item">
+            <div class="tl-header">
+              2007
+            </div>
+            <div class="tl-text">
+              Sr. Software Engineer<br/>
+              @ IDF 
+            </div>
+            <b>&nbsp;</b>
+          </div>
+          <div class="tl-item">
+            <div class="tl-header">
+              1988
+            </div>
+            <div class="tl-text">
+              <code>console.log("hello world!");</code>
+            </div>
+            <b>&nbsp;</b>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <footer>
+    <p>&copy; 2023 Moti Granovsky. All rights reserved.</p>
+  </footer>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145140816-1"></script>
 <script>
@@ -121,6 +200,5 @@
 
   gtag('config', 'UA-145140816-1');
 </script>
-
 </body>
 </html>
